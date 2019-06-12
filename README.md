@@ -1,3 +1,3 @@
 # Digital Mudra
 
-## We help businesses and individual having a positive impact on the environment.
+## We help businesses and individuals having a positive impact on the environment.
