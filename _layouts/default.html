@@ -4,17 +4,39 @@
     <meta char set="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="robots" content="noindex" />
-    <meta name="description" content="{{ page.title }}" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="description" content="{{ page.description }}" />
     <title>{{ page.title }}</title>
+  
   </head>
   <body>
-    <header>
-      <h1>
-        Digital Mudra
-      </h1>
-    </header>
+    <div class="main">
+      <header>
+        <h1>
+          Digital Mudra
+        </h1>
+        <div class="top-menu">
+        <ul>
+        {% for page in site.pages %}
+          {% for pc in page.categories %}
+            {% if pc == "services" %}
+              <li><a href="{{ page.url }}">{{ page.title | upcase }}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        </ul>
+        </div>
+      </header>
+      {{ content }}
 
-    {{ content }}
+      {% for category in site.categories %}
+      <h3>{{ category[0] }}</h3>
+      <ul>
+        {% for post in category[1] %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
   </body>
 </html>

@@ -1,0 +1,29 @@
+.services--main-image {
+    max-width: 5rem;
+    display: block;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5em;
+    grid-template-areas: "Text Image";
+
+    .service-content {
+        grid-area: Text;
+        display: block;
+        text-align: justify;
+
+        h2 {
+            text-align: left;
+        }
+    }
+
+    .service-main-image {
+        grid-area: Image;
+        width: 100%;
+        margin-top: 7em;
+    }
+}
+

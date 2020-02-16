@@ -1,12 +1,10 @@
 ---
-quicksummary: Extract data from 20min german artices and create flashcards for learning german
 resource: true
 categories: [services]
-layout: default
+layout: services
+title: Consulting & Strategy 
+main_image: /assets/images/strategy.svg
 ---
-
-Digital Marketing Consulting & Strategy 
-========
 
 Starting from your existing marketing initiative, we develop with you a sustainable strategy to help you grow your business. 
 

@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap);
+
+@import "./palette.scss";
+@import "./services.scss";
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: $color1;
+  font-size: 16px;
+  // line-height: 200%;
+}
+
+.main {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+
+  header {
+    margin-bottom: 3rem;
+  }
+}
+
+h1 {
+  color: $color3;
+  margin: 0 0 1rem 0;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: $color5;
+  font-size: 5rem;
+  line-height: 100%;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  // font-size: 4rem;
+}
+
+h4 {
+  // font-size: 3rem;
+}
+
+h3, h4 {
+    color: $color4;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.top-menu {
+    position: relative;
+    margin: 1em;
+    overflow: hidden;
+    all: unset;
+}
+.top-menu ul {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+    font-size: 0.75rem;
+}
+
+.top-menu li {
+    all: unset;
+    flex-basis: auto;
+    margin: .125em 0;
+    padding: 0 1em;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    background-color: #fff;
+
+
+  a {
+    &:visited {
+      all: unset;
+    }
+  }
+}

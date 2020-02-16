@@ -6,8 +6,6 @@ url: https://digitalmudra.ch
 
 markdown: kramdown
 
-category-list: [services, contact, blog]
-
 plugins:
   - jemoji
 

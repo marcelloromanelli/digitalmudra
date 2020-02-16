@@ -1,0 +1,20 @@
+---
+layout: page
+permalink: /services/
+title: Services
+---
+
+<h2>All the services</h2>
+<div id="archives">
+
+{% for page in site.pages %}
+    {% for pc in page.categories %}
+        {% if pc == "services" %}
+        <ul>
+            <li>{{ page.title }}</li>
+        </ul>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+</div>
