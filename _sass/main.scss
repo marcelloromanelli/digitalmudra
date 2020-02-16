@@ -2,6 +2,7 @@
 
 @import "./palette.scss";
 @import "./services.scss";
+@import "./home.scss";
 
 body {
   font-family: "Muli", sans-serif;
@@ -37,7 +38,7 @@ h2 {
 }
 
 h3 {
-  // font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h4 {
@@ -74,11 +75,14 @@ h3, h4 {
     text-align: center;
     border-left: 1px solid #ccc;
     background-color: #fff;
+}
 
+a {
+  all: unset;
 
-  a {
-    &:visited {
-      all: unset;
-    }
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: $color3;
   }
 }
