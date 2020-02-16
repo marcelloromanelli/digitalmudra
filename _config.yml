@@ -5,7 +5,7 @@ baseurl: "/"
 
 markdown: kramdown
 
-category-list: [whoami, hack]
+category-list: [services, contact, blog]
 
 plugins:
   - jemoji
