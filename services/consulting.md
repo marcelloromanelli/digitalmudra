@@ -2,6 +2,7 @@
 quicksummary: Extract data from 20min german artices and create flashcards for learning german
 resource: true
 categories: [services]
+layout: default
 ---
 
 Digital Marketing Consulting & Strategy 
